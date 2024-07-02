@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body{
+  background: linear-gradient(90deg, #000428 0%, #004e92 150%);
+}
+
+html,body{
+  height: 100%;
+}
+
+.container{
+  width: 500px;
+  padding:20px 40px 30px 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #000;
+  border-radius: 10px;
+}
+
+.header p{
+  margin-left: 20px;
+  color: #fff;
+  font-size: 50px;
+}
+
+#pstyle{
+  color: #16e6b9;
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.hero{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.hero input{
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 20px 40px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 18px;
+}
+
+#inputfield::placeholder{
+  color: #94bab192;
+}
+
+#btn{
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  background: #16e6b9;
+  color: #000428;
+  border-radius: 10px;
+  border: none;
+  transition: .2s ease;
+}
+
+#btn:hover{
+  color: #004e92;
+}
+
+#qrImage{
+  width: 200px;
+  margin: 15px 0;
+  padding: 10px;
+  border: solid 3px #a59f9f;
+  display: none;
+}
+
+.animate-qr {
+  animation: qrAnimation 1s ease-in-out;
+}
+
+@keyframes qrAnimation {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+
